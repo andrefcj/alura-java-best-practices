@@ -51,20 +51,7 @@ public class AbrigoService {
                 .stream()
                 .map(DadosDetalhesPet::new)
                 .toList();
-
-//        List<DadosDetalhesPet> petsDtos = new ArrayList<>();
-//        List<Pet> pets = new ArrayList<>();
-//        if (isSearchById(idOuNome)) {
-//            Long id = Long.parseLong(idOuNome);
-//            pets = repository.getReferenceById(id).getPets();
-//        } else {
-//            pets = repository.findByNome(idOuNome).getPets();
-//        }
-//        pets.forEach(p -> petsDtos.add(new DadosDetalhesPet(p)));
-//        return petsDtos;
     }
-
-
 
     public Abrigo carregarAbrigo(String idOuNome) {
         if (isSearchById(idOuNome)) {
